@@ -1,5 +1,8 @@
 # Open Agent Run Metrics Interop (OARMI)
 
+[Start here](START-HERE.md) · [AI agent guidance](AGENTS.md)
+
+
 **Status:** Early research / draft fixtures. Not a standard, certification, billing system, or production accounting implementation.
 
 OARMI is a neutral, open-source project for documenting interoperability questions and maintaining test vectors around agent-run usage and accounting. It aims to help implementers compare how systems represent model usage, tool activity, delegation, partial reports, and estimated versus observed costs.
