@@ -1,0 +1,32 @@
+{
+  "fixture_id": "oarmi-002",
+  "title": "Interim snapshots and final totals",
+  "status": "draft",
+  "category": "snapshot-vs-delta",
+  "input": {
+    "run_id": "run-stream-001",
+    "reports": [
+      {
+        "sequence": 1,
+        "kind": "snapshot",
+        "total_output_tokens": 10
+      },
+      {
+        "sequence": 2,
+        "kind": "snapshot",
+        "total_output_tokens": 28
+      },
+      {
+        "sequence": 3,
+        "kind": "final_snapshot",
+        "total_output_tokens": 28
+      }
+    ]
+  },
+  "expected": {
+    "outcome": "no_double_count",
+    "final_output_tokens": 28,
+    "note": "Snapshots are cumulative; do not sum 10 + 28 + 28."
+  },
+  "notes": "The snapshot/delta distinction must be explicit in real integrations."
+}
