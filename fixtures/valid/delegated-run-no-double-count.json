@@ -1,0 +1,30 @@
+{
+  "fixture_id": "oarmi-003",
+  "title": "Parent and delegated child usage",
+  "status": "draft",
+  "category": "aggregation",
+  "input": {
+    "parent_run_id": "parent-1",
+    "parent_aggregate": {
+      "input_tokens": 200,
+      "output_tokens": 70
+    },
+    "child_runs": [
+      {
+        "run_id": "child-1",
+        "input_tokens": 120,
+        "output_tokens": 40
+      },
+      {
+        "run_id": "child-2",
+        "input_tokens": 80,
+        "output_tokens": 30
+      }
+    ]
+  },
+  "expected": {
+    "outcome": "no_double_count",
+    "note": "If parent totals already aggregate children, do not add parent and child values."
+  },
+  "notes": "Aggregation rule is intentionally declared as an assumption."
+}
