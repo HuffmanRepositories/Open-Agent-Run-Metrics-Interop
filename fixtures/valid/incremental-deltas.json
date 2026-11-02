@@ -1,0 +1,32 @@
+{
+  "fixture_id": "oarmi-007",
+  "title": "Incremental usage deltas",
+  "status": "draft",
+  "category": "snapshot-vs-delta",
+  "input": {
+    "run_id": "run-delta-1",
+    "reports": [
+      {
+        "sequence": 1,
+        "kind": "delta",
+        "output_tokens": 5
+      },
+      {
+        "sequence": 2,
+        "kind": "delta",
+        "output_tokens": 7
+      },
+      {
+        "sequence": 3,
+        "kind": "final_delta",
+        "output_tokens": 3
+      }
+    ]
+  },
+  "expected": {
+    "outcome": "sum_deltas",
+    "total_output_tokens": 15,
+    "note": "Sum only because every report is explicitly a delta."
+  },
+  "notes": "A real source must define ordering and duplicate handling."
+}
