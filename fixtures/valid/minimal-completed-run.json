@@ -1,0 +1,20 @@
+{
+  "fixture_id": "oarmi-001",
+  "title": "Minimal completed run",
+  "status": "draft",
+  "category": "minimal",
+  "input": {
+    "run_id": "run-demo-001",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 120,
+      "output_tokens": 45,
+      "reported_by": "synthetic-provider"
+    }
+  },
+  "expected": {
+    "outcome": "accept",
+    "note": "Minimal synthetic completed run; provider semantics are not asserted."
+  },
+  "notes": "Illustrative only."
+}
