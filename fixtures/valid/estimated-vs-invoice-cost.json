@@ -1,0 +1,23 @@
+{
+  "fixture_id": "oarmi-008",
+  "title": "Estimated cost versus invoice-backed cost",
+  "status": "draft",
+  "category": "cost-provenance",
+  "input": {
+    "estimated_cost": {
+      "amount": "0.0042",
+      "currency": "USD",
+      "basis": "estimated-token-price"
+    },
+    "invoice_cost": {
+      "amount": "0.0050",
+      "currency": "USD",
+      "basis": "invoice-line-item"
+    }
+  },
+  "expected": {
+    "outcome": "keep_distinct",
+    "note": "Estimated and invoice-backed values remain separate with provenance."
+  },
+  "notes": "Amounts are fictional; not a pricing recommendation."
+}
