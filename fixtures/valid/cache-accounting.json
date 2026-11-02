@@ -1,0 +1,19 @@
+{
+  "fixture_id": "oarmi-004",
+  "title": "Cache usage has separate dimensions",
+  "status": "draft",
+  "category": "cache",
+  "input": {
+    "usage": {
+      "input_tokens": 100,
+      "cache_read_tokens": 40,
+      "cache_write_tokens": 10,
+      "output_tokens": 20
+    }
+  },
+  "expected": {
+    "outcome": "review_required",
+    "note": "Do not assume cached tokens are additive to input_tokens; source semantics must define overlap."
+  },
+  "notes": "Synthetic values only."
+}
