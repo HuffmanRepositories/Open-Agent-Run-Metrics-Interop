@@ -1,0 +1,19 @@
+{
+  "fixture_id": "oarmi-006",
+  "title": "Failed invocation with metered usage",
+  "status": "draft",
+  "category": "failure",
+  "input": {
+    "invocation_id": "call-fail-1",
+    "status": "failed",
+    "usage": {
+      "input_tokens": 25,
+      "output_tokens": 4
+    }
+  },
+  "expected": {
+    "outcome": "accept",
+    "note": "Failure status does not imply zero usage."
+  },
+  "notes": "Actual provider metering rules vary."
+}
