@@ -1,0 +1,22 @@
+{
+  "fixture_id": "oarmi-005",
+  "title": "Tool call without model usage",
+  "status": "draft",
+  "category": "tool-usage",
+  "input": {
+    "run_id": "run-tool-1",
+    "tool_invocations": [
+      {
+        "invocation_id": "tool-1",
+        "name": "local_lookup",
+        "status": "completed"
+      }
+    ],
+    "model_usage": null
+  },
+  "expected": {
+    "outcome": "accept",
+    "note": "Tool invocation can exist without model token usage."
+  },
+  "notes": "Null here means no model usage record supplied, not zero usage."
+}
