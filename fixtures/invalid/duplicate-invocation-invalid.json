@@ -1,0 +1,27 @@
+{
+  "fixture_id": "oarmi-011",
+  "title": "Duplicate invocation identifier",
+  "status": "draft",
+  "category": "invalid-identity",
+  "input": {
+    "invocations": [
+      {
+        "invocation_id": "same",
+        "usage": {
+          "input_tokens": 1
+        }
+      },
+      {
+        "invocation_id": "same",
+        "usage": {
+          "input_tokens": 2
+        }
+      }
+    ]
+  },
+  "expected": {
+    "outcome": "review_required",
+    "reason": "Duplicate IDs may cause double counting; uniqueness scope must be defined."
+  },
+  "notes": "Validator currently checks fixture ID uniqueness, not invocation identity."
+}
