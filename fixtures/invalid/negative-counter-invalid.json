@@ -1,0 +1,17 @@
+{
+  "fixture_id": "oarmi-010",
+  "title": "Negative usage counter",
+  "status": "draft",
+  "category": "invalid-counter",
+  "input": {
+    "usage": {
+      "input_tokens": -1,
+      "output_tokens": 2
+    }
+  },
+  "expected": {
+    "outcome": "reject",
+    "reason": "Negative token counter without a declared correction/adjustment semantic."
+  },
+  "notes": "Negative counters are invalid under this fixture's simple counter assumption."
+}
