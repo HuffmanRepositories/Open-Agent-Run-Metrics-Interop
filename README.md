@@ -1,6 +1,6 @@
 # Open Agent Run Metrics Interop (OARMI)
 
-[Start here](START-HERE.md) · [AI agent guidance](AGENTS.md)
+[Start here](START-HERE.md) · [Whitepaper](WHITEPAPER.md) · [AI agent guidance](AGENTS.md)
 
 
 **Status:** Early research / draft fixtures. Not a standard, certification, billing system, or production accounting implementation.
