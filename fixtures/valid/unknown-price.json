@@ -1,0 +1,19 @@
+{
+  "fixture_id": "oarmi-009",
+  "title": "Unknown model price",
+  "status": "draft",
+  "category": "cost-provenance",
+  "input": {
+    "model": "unlisted-model",
+    "usage": {
+      "input_tokens": 100,
+      "output_tokens": 20
+    },
+    "price_lookup": "missing"
+  },
+  "expected": {
+    "outcome": "unknown_cost",
+    "note": "Do not infer a price or silently emit zero cost."
+  },
+  "notes": "Synthetic model identifier."
+}
